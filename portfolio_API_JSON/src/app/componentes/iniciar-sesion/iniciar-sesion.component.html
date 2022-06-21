@@ -1,0 +1,29 @@
+ 
+ <div class="wrap">
+
+  <div id="MainLogin">
+		<div class="TopLogin">
+			<p> Log In </p>
+		</div>
+
+		<div class="OuterLogin">
+
+
+<form [formGroup]="form">
+        <label for="userName"> User Name or Email </label>
+        <input  type="text" id="userId" name="userId" formControlName="userId"
+                required
+                minlength="4"
+                maxlength="20"
+                placeholder="Digite usuario">
+
+        <label for="passWord"> Password </label>
+        <input type="password" id="password" name="password" formControlName="password">
+
+        <button (click)="userLogin(form.value)" [disabled]="form.invalid">Login</button>
+      </form>
+
+		</div>
+	</div>
+ </div>
+ 

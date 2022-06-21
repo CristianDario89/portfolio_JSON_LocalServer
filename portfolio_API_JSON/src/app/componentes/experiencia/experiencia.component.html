@@ -1,0 +1,51 @@
+<div class="row wrap-titulo my-2">
+
+  <div class="col-lg-8">
+    <div class="parallax img-tres" id="experiencia">
+      <h2 class="texto-interior">
+        Experiencia
+      </h2>
+    </div>
+  </div>
+
+  <div class="col-lg-4 wrap-img">
+    <img src="../../../assets/educacion/s5.jpg">
+  </div>
+
+</div>
+
+<div class="card mat-card" id="card-experiencia">
+
+  <div class="card-titles">
+ 
+    <button (click)="redirect()" class="btn"><i class="fa fa-plus"></i></button>
+
+  </div>
+
+  <ul class="items-list">
+    <li *ngFor="let experiencia of experienciaList">
+      <div class="data-container">
+
+        <div class="logo-image-container">
+          <img class="logo-image" [src]="experiencia.img">
+        </div>
+        <div class="list-info">
+          <div class="wrap-data">
+            <p id="title">{{experiencia.title}}</p>
+            <p id="puesto">{{experiencia.institucion}}</p>
+            <p><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
+          </div>
+        </div>
+<!--
+  <div class="wrap-btns">
+          <button (click)="actualizarExperiencia(experiencia.id)" class="btnEdu"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button (click)="eliminarExp(experiencia.id)" class="btnEdu"><i class="fa-solid fa-trash"></i></button>
+        </div> 
+-->
+      
+
+      </div>
+    </li>
+  </ul>
+ 
+</div>

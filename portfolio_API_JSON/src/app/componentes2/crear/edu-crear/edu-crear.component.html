@@ -1,0 +1,50 @@
+<h1 class="m-2 text-center">Agregar Educación</h1>
+<div class="row">
+
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+
+    <form  (ngSubmit)= "onSubmit()" class="m-2">
+
+      <div class="form-group">
+        <label>Institucion : </label>
+        <input type="text" class="form-control" id="institucion" [(ngModel)]="educacion.institucion" name="institucion"
+          required minlength="4" maxlength="20" placeholder="Digite su Institucion " #nombre="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>title : </label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="educacion.title" name="title" required
+          minlength="4" maxlength="20" placeholder="Digite la certificación" #nombre="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>start : </label>
+        <input type="text" class="form-control" id="start" [(ngModel)]="educacion.start" name="start" required
+          minlength="4" maxlength="10" placeholder="Digite fecha de inicio " #apellido="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>end : </label>
+        <input type="text" class="form-control" id="end" [(ngModel)]="educacion.end" name="end" required minlength="4"
+          maxlength="10" placeholder="Digite fecha de cierre " #apellido="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>img : </label>
+        <input type="text" class="form-control" id="img" [(ngModel)]="educacion.img" name="img" required minlength="4"
+          maxlength="100" placeholder="Digite la url de su imágen " #apellido="ngModel">
+
+      </div>
+
+
+      <button class="btn btn-success mt-2">Guardar</button>
+    </form>
+
+  </div>
+  <div class="col-lg-3"></div>
+</div>

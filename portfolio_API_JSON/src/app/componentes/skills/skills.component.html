@@ -1,0 +1,54 @@
+<div class="row wrap-titulo my-2">
+
+  <div class="col-lg-8">
+    <div class="parallax img-tres" id="skills">
+      <h2 class="texto-interior">
+        Skills
+      </h2>
+    </div>
+  </div>
+
+  <div class="col-lg-4 wrap-img">
+    <img src="../../../assets/educacion/s7.jpg">
+  </div>
+
+</div>
+
+<div class="card mat-card" id="card-skills">
+  <div class="card-titles">
+    <button (click)="redirect()" class="btn"><i class="fa fa-plus"></i></button>
+  </div>
+  
+  <div class="row wrap-skills">
+
+    <div class="col-sm-4 col-md-4 col-lg-4 marco" *ngFor="let skill of skillList">
+
+      <div class="wrap-ediciones">
+
+        <h3 class="text-center">{{skill.habilidad}}</h3>
+
+        <!--
+    <div class="wrap-btns">
+          <button (click)="actualizarHabilidad(skill.id)" class="btnEdu"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button  (click)="eliminarHabilidad(skill.id)"  class="btnEdu"><i class="fa-solid fa-trash"></i></button>
+        </div>
+-->
+      
+
+      </div>
+      <circle-progress [percent]="90" [radius]="75" [imageSrc]="skill.img" [showImage]="true" [imageHeight]="88"
+        [imageWidth]="88" [showUnits]="false" [showSubtitle]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="3"
+        [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+      </circle-progress>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="wrap-footer">
+  <footer>
+    <p class="p1-footer">Romero Cristian Darío | © Argentina Programa 2022</p>
+    <p class="p2-footer">Buenos Aires, Argentina</p>
+  </footer>
+</div>

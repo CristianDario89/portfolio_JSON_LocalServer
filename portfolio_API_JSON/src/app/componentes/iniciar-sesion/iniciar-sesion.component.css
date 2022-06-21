@@ -1,0 +1,66 @@
+.wrap{
+  background: #020202;
+  height: 100vh;
+
+  display: flex;justify-content: center; 
+}
+div#MainLogin {
+  border-radius: 4px;
+  box-shadow: -5px 4px 1px #fff;
+  overflow: hidden;
+  width: 515px;
+  place-items: center;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  background: linear-gradient(45deg, #22a6b3, #30336b);
+  padding: 15px 5px;
+   
+  transform: skew(0deg, -3deg);
+  padding-bottom: 65px;
+  transition: transform 0.4s;
+}
+
+div#MainLogin:hover{
+transform:skew(0deg, 0deg);
+}
+
+.OuterLogin input {
+  display: block;
+  text-align: left;
+  border: 2px solid tomato;
+  margin: 9px 0px;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+
+.OuterLogin {
+  text-align: left;
+}
+
+.TopLogin p {
+  font-family: arial;
+  font-size: 40px;
+  color: white;
+}
+
+.OuterLogin label {
+  font-family: sans-serif;
+  color: azure;
+  font-size: 19px;
+}
+input#sb {
+  margin: auto;
+  margin-top: 14px;
+  cursor: pointer;
+  background: tomato;
+  outline: none;
+  border: none;
+  border-radius: 31px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: monospace;
+  padding: 11px 124px;
+}

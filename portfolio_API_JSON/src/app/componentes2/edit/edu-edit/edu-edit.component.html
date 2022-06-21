@@ -1,0 +1,86 @@
+<form (ngSubmit)= "onSubmit()">
+  
+    <div class="form-group">
+      <label>institucion : </label>
+      <input type = "text"
+      class="form-control"
+      id = "institucion"
+      [(ngModel)] = "educacion.institucion"
+      name = "institucion"
+      required
+      minlength="4"
+      maxlength="20"
+      placeholder="Digite su institucion "
+      #nombre = "ngModel"
+      >
+     
+    </div>
+
+    <div class="form-group">
+        <label>title : </label>
+        <input type = "text"
+        class="form-control"
+        id = "title"
+        [(ngModel)] = "educacion.title"
+        name = "title"
+        required
+        minlength="4"
+        maxlength="20"
+        placeholder="Digite su title"
+        #nombre = "ngModel"
+        >
+       
+    </div>
+
+    <div class="form-group">
+      <label>start : </label>
+      <input type = "text"
+      class="form-control"
+      id = "start"
+      [(ngModel)] = "educacion.start"
+      name = "start"
+      required
+      minlength="4"
+      maxlength="10"
+      placeholder="Digite su start "
+      #apellido = "ngModel"
+      >
+    
+    </div>
+
+    <div class="form-group">
+        <label>end : </label>
+        <input type = "text"
+        class="form-control"
+        id = "end"
+        [(ngModel)] = "educacion.end"
+        name = "end"
+        required
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite su end "
+        #apellido = "ngModel"
+        >
+ 
+      </div>
+
+    <div class="form-group">
+        <label>img : </label>
+        <input type = "text"
+        class="form-control"
+        id = "img"
+        [(ngModel)] = "educacion.img"
+        name = "img"
+        required
+        minlength="4"
+        maxlength="20"
+        placeholder="Digite su img "
+        #apellido = "ngModel"
+        >
+ 
+      </div>
+ 
+
+    <button class="btn btn-success">Guardar</button>
+</form>
+     

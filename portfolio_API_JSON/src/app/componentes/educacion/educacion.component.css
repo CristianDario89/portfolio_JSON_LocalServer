@@ -1,0 +1,152 @@
+#card-educacion{
+  width:70%;
+  margin:0 auto;
+}
+
+.wrap-data {
+  margin-bottom: 30px;
+}
+
+.wrap-data p {
+  display: inline;
+
+  margin-right: 10px;
+}
+/*------------------*/
+#institucion {
+  display: inline;
+  background-color: black;
+  padding: 2px 4px;
+  color: white;
+}
+
+.logo-image {
+  margin-right: 25px;
+}
+
+#time {
+  font-style: italic;
+  font-size: 14px;
+  color: grey;
+}
+
+#title {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+/*----------*/
+
+.gallery-image {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gallery-image img {
+  height: 90px;
+  width: 100%;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.6);
+}
+
+.img-box:hover .transparent-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+/*-----------*/
+.caption p a {
+  padding: 2px 8px;
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width:820px) {
+  #card-educacion {
+    margin: 0;
+    width:100%;
+  }
+
+  .gallery-image {
+    margin: 10px 0 30px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .wrap-data p {
+    display: block;
+
+    margin-right: 0;
+  }
+
+  #time {
+    transform: translateY(-12px);
+  }
+
+  #title {
+    line-height: 22px;
+    font-size: 18px;
+  }
+
+  #institucion {
+    font-size: 12px;
+  }
+
+  .logo-image {
+    margin-right: 0;
+  }
+}

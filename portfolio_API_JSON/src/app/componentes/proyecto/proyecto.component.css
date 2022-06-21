@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Montserrat+Alternates:wght@300;400&display=swap');
+
+#card-experiencia {
+  border: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row .parte1 {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: double;
+  border-left-style: solid;
+}
+
+p {
+  text-align: justify;
+}
+
+.parte1 {
+  border-radius: 10px;
+  transform: scaleY(0.95) scaleX(0.95);
+}
+
+.one {
+  display: grid;
+  grid-template-columns: 92% 8%;
+}
+
+/*------------------*/
+.parte2 img {
+  height: 170px;
+  width: 100%;
+  border: 1px solid #b80000;
+  border-radius: 10px;
+  transform: scaleX(0.65) scaleY(0.95);
+
+}
+
+/*---------------*/
+p a {
+  text-decoration: none;
+  color: grey;
+  font-style: italic;
+
+}
+
+.link-proyecto {
+  line-height: 1px;
+  text-align: center;
+  transform: translateY(-7px);
+}
+
+p a:hover {
+  color: #b80000;
+}
+
+/*
+.titulo{
+    font-size: 20px;
+}*/
+/*------------------------*/
+.p-descripcion {
+  line-height: 18px;
+  font-family: sans-serif;
+
+}
+
+/*-------------*/
+.one .titulo {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  font-size: 22px;
+  line-height: 23px;
+  margin-left: 11%;
+}
+
+.one .titulo:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #b80000;
+}
+
+.one .titulo:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 4px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+
+/*---------------*/
+@media (max-width:920px) {
+  #card-experiencia {
+
+    width: 100%;
+
+  }
+
+  .parte2 img {
+    height: 300px;
+    width: 100%;
+    padding: 0 0;
+
+    transform: scale(0.85);
+  }
+
+  .parte1 {
+
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  /*----------*/
+  .one {
+    display: grid;
+    grid-template-columns: 88% 12%;
+  }
+
+  .one .titulo {
+    margin-left: 9%;
+  }
+}

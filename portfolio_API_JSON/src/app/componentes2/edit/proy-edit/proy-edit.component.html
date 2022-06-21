@@ -1,0 +1,31 @@
+<form (ngSubmit)= "onSubmit()">
+  
+    <div class="form-group">
+      <label>Título : </label>
+      <input type = "text" class="form-control" id="nombre" placeholder="Digite el titulo" 
+      [(ngModel)] = "proyecto.nombre" #nombre = "ngModel" name="nombre" required minlength="4" maxlength="20">
+    </div>
+
+    <div class="form-group">
+        <label>Link: </label>
+        <input type = "text" class="form-control" id = "link"  name = "link" placeholder="Digite su link"  
+        [(ngModel)]= "proyecto.end" #end = "ngModel" required minlength="4" maxlength="20">
+    </div>
+
+    <div class="form-group">
+      <label>Descripcion : </label>
+      <input type = "text" class="form-control" id = "descripcion"  name = "descripcion" placeholder="Digite su descripcion "
+      [(ngModel)] = "proyecto.descripcion" #descripcion = "ngModel" required minlength="4" maxlength="20" >
+    
+    </div>
+ 
+
+    <div class="form-group">
+        <label>img : </label>
+        <input type = "text" class="form-control" id = "img" name = "img" placeholder="Digite su img "
+        [(ngModel)] = "proyecto.img" #img = "ngModel" required minlength="4" maxlength="20">
+    </div>
+ 
+    <button class="btn btn-success">Guardar</button>
+</form>
+     

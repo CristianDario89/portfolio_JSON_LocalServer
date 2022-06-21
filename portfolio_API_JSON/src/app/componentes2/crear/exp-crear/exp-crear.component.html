@@ -1,0 +1,49 @@
+<h1 class="m-2 text-center">Agregar Experiencia</h1>
+<div class="row">
+
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+    <form (ngSubmit)= "onSubmit()">
+      <div class="form-group">
+        <label>empresa : </label>
+        <input type="text" class="form-control" id="empresa" [(ngModel)]="experiencia.empresa" name="empresa" required
+          minlength="4" maxlength="20" placeholder="Digite su empresa " #nombre="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>puesto : </label>
+        <input type="text" class="form-control" id="puesto" [(ngModel)]="experiencia.puesto" name="puesto" required
+          minlength="4" maxlength="20" placeholder="Digite su puesto" #nombre="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>start : </label>
+        <input type="text" class="form-control" id="start" [(ngModel)]="experiencia.start" name="start" required
+          minlength="4" maxlength="10" placeholder="Digite su start " #apellido="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>end : </label>
+        <input type="text" class="form-control" id="end" [(ngModel)]="experiencia.end" name="end" required minlength="4"
+          maxlength="10" placeholder="Digite su end " #apellido="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>img : </label>
+        <input type="text" class="form-control" id="img" [(ngModel)]="experiencia.img" name="img" required minlength="4"
+          maxlength="20" placeholder="Digite su img " #apellido="ngModel">
+
+      </div>
+
+
+      <button class="btn btn-success">Guardar</button>
+    </form>
+
+
+  </div>
+  <div class="col-lg-3"></div>
+</div>

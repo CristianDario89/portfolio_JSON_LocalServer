@@ -1,0 +1,42 @@
+<h1 class="m-2 text-center">Agregar Proyecto</h1>
+<div class="row">
+
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+    <form  (ngSubmit)= "onSubmit()">
+      <div class="form-group">
+        <label>titulo : </label>
+        <input type="text" class="form-control" id="titulo" [(ngModel)]="proyecto.nombre" name="titulo" required
+          minlength="4" maxlength="20" placeholder="Digite su titulo " #nombre="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>link : </label>
+        <input type="text" class="form-control" id="link" [(ngModel)]="proyecto.end" name="link" required minlength="4"
+          maxlength="30" placeholder="Digite su link" #end="ngModel">
+
+      </div>
+
+      <div class="form-group">
+        <label>descripcion : </label>
+        <input type="text" class="form-control" id="descripcion" [(ngModel)]="proyecto.descripcion" name="descripcion"
+          required minlength="4" maxlength="30" placeholder="Digite su descripcion" #apellido="ngModel">
+
+      </div>
+ 
+      <div class="form-group">
+        <label>img: </label>
+        <input type="text" class="form-control" id="img" [(ngModel)]="proyecto.img" name="img" required minlength="4"
+          maxlength="10" placeholder="Digite su img" #apellido="ngModel">
+
+      </div>
+
+
+      <button class="btn btn-success">Guardar</button>
+    </form>
+
+
+  </div>
+  <div class="col-lg-3"></div>
+</div>

@@ -1,0 +1,159 @@
+<div class="row wrap-titulo my-2">
+
+  <div class="col-lg-8">
+    <div class="parallax img-tres" id="educacion">
+      <h2 class="texto-interior">
+        Educación
+      </h2>
+    </div>
+  </div>
+
+  <div class="col-lg-4 wrap-img">
+    <img src="../../../assets/educacion/cole.jpg">
+  </div>
+
+</div>
+
+<div class="card mat-card" id="card-educacion">
+
+  <div class="card-titles">
+    <button (click)="redirect()" class="btn"><i class="fa fa-plus"></i></button>
+  </div>
+
+
+  <ul class="items-list">
+    <li *ngFor="let educacion of educacionList">
+      <div class="data-container">
+
+        <div class="logo-image-container">
+          <img class="logo-image" [src]="educacion.img">
+        </div>
+        <div class="list-info">
+          <div class="wrap-data">
+            <p id="institucion">{{educacion.institucion}}</p>
+            <p id="title">{{educacion.title}}</p>
+            <p id="time"><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+          </div>
+        </div>
+<!--
+<div class="wrap-btns">
+          <button (click)="actualizarEducacion(educacion.id)" class="btnEdu"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button (click)="eliminarEducacion(educacion.id)" class="btnEdu"><i class="fa-solid fa-trash"></i></button>
+        </div>
+-->
+        
+
+      </div>
+    </li>
+   
+  </ul>
+
+  <!--
+
+<ul class="items-list">
+    <li *ngFor="let educacion of educacionList">
+      <div class="data-container">
+
+        <div class="logo-image-container">
+          <img class="logo-image" [src]="educacion.img">
+        </div>
+        <div class="list-info">
+          <div class="wrap-data">
+            <p id="institucion">{{educacion.institucion}}</p>
+            <p id="title">{{educacion.title}}</p>
+            <p id="time"><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+          </div>
+        </div>
+
+        <button (click)="actualizarEducacion(educacion.id)" class="btn btn-info">E</button>
+        <button (click)="eliminarEducacion(educacion.id)" class="btn btn-danger">Eliminar</button>
+      </div>
+    </li>
+  </ul>
+  -->
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="../../../assets/educacion/analytic.png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>
+            <a href="https://analytics.google.com/analytics/academy/certificate/rYWB0O8OQJCTgOngyUFWrw" target="_blank">
+              ver credencial
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="../../../assets/educacion/meanUdemy.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>
+            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-8f9db880-f8f6-46d0-b442-a300e1e41412.jpg"
+              target="_blank">
+              ver credencial
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="../../../assets/educacion/cole1.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Solicitar original</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="../../../assets/educacion/cole2.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Solicitar original</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="../../../assets/educacion/Certificado1.png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>
+            <a href="https://edutin.com/certifications/view/2254909" target="_blank">
+              ver credencial
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="../../../assets/educacion/c3.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Solicitar original</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="../../../assets/educacion/CRISTIAN DARIO ROMERO70 (2).jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Solicitar original</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="../../../assets/educacion/Certificado2.png" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>
+            <a href="https://usuarios.aulafacil.com/certificacion/descargar/20200809132-4889c7" target="_blank">
+              ver credencial
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,65 @@
+<div class="row wrap-titulo my-2">
+
+  <div class="col-lg-8">
+    <div class="parallax img-tres" id="proyectos">
+      <h2 class="texto-interior">
+        Proyectos
+      </h2>
+    </div>
+  </div>
+
+  <div class="col-lg-4 wrap-img">
+    <img src="../../../assets/educacion/s1.jpg">
+  </div>
+
+</div>
+
+<div class="card mat-card" id="card-experiencia">
+  <div class="card-titles">
+    <button (click)="redirect()" class="btn"><i class="fa fa-plus"></i></button>
+  </div>
+  
+  <div class="row">
+
+    <div class="col-sm-12 col-md-6 col-lg-6 parte1" *ngFor="let proyecto of proyectoList">
+
+      <div class="one mt-2">
+        <p class="titulo">{{proyecto.nombre}}</p>
+
+        <!--
+   <div class="wrap-btns">
+          <button (click)="actualizarProyecto(proyecto.id)" class="btnEdu"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button (click)="eliminarPro(proyecto.id)" class="btnEdu"><i class="fa-solid fa-trash"></i></button>
+        </div>
+-->
+       
+
+      </div>
+      <p class="link-proyecto"><a [href]="proyecto.end" target="_blank">visitar proyecto</a></p>
+      <div class="p-descripcion">
+        <p>{{proyecto.descripcion}}</p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 parte2">
+        <img [src]="proyecto.img" class="img-fluid">
+      </div>
+
+
+    </div>
+
+
+    <!--
+   <div class="one mt-2">
+        <p class="titulo">{{proyecto.nombre}}</p>
+      </div>
+      <p class="link-proyecto"><a [href]="proyecto.end" target="_blank">visitar proyecto</a></p>
+      <div class="p-descripcion">
+        <p>{{proyecto.descripcion}}</p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 parte2">
+        <img [src]="proyecto.img" class="img-fluid">
+      </div>
+    -->
+  </div>
+
+
+</div>
